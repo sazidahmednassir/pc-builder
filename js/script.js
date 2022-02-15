@@ -31,7 +31,7 @@ document.getElementById('sixteenGB').addEventListener('click', function(){
 function onClick(clickId, updateId, price) {
     document.getElementById(clickId).addEventListener("click", function () {
         updatePrice(updateId, price);
-        document.getElementById(clickId).style.backgroundColor = "cornflowerblue"
+        // document.getElementById(clickId).style.backgroundColor = "cornflowerblue"
     });
 }
 
@@ -59,4 +59,22 @@ function updatePrice(itemId, price) {
     const total = document.getElementById("total-price");
     total.innerText = totalPrice;
 }
+
+const fakeCode = "pHero";
+document.getElementById("apply-btn").addEventListener("click", function(){
+    const code = document.getElementById("promo-input").value;
+    if(code === fakeCode){
+        const total = document.getElementById("total-price");
+        let totalPrice = parseFloat(total.innerText);
+
+        const discount = (totalPrice*20)/100;
+
+        totalPrice = totalPrice - discount;
+
+        total.innerText = totalPrice;
+
+    } else{
+
+    }
+})
 
