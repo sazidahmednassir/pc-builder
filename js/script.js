@@ -11,6 +11,7 @@ document.getElementById('sixteenGB').addEventListener('click', function(){
 
     const total = document.getElementById("total-price");
     total.innerText = totalPrice;
+    updatePrice("memory-cost", 300);
     
 })
 
