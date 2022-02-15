@@ -13,3 +13,4 @@ document.getElementById('sixteenGB').addEventListener('click', function(){
     total.innerText = totalPrice;
     
 })
+
