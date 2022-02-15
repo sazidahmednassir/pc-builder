@@ -72,9 +72,12 @@ document.getElementById("apply-btn").addEventListener("click", function(){
         totalPrice = totalPrice - discount;
 
         total.innerText = totalPrice;
+        document.getElementById('applied-text').style.display="inline-block";
+        document.getElementById('applied-text-fail').style.display="none";
 
     } else{
-
+        document.getElementById('applied-text-fail').style.display="inline-block";
+        document.getElementById('applied-text').style.display="none";
     }
 })
 
